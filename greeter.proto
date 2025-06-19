@@ -1,0 +1,39 @@
+syntax = "proto3";  //指定语法格式
+package proto;  //指定生成的包名字
+
+option java_package = "org.ymx.proto";
+option go_package = "/";
+
+// 定义gRPC服务接口
+service HelloService {
+  // 接口的具体方法
+  rpc SayHello(HelloRequest) returns (HelloReply) {}
+}
+
+// 接口的请求参数类型
+message HelloRequest {
+  string var1 = 1;
+  string var2 = 2;
+  string var3 = 3;
+  string var4 = 4;
+  string var5 = 5;
+  string var6 = 6;
+  string var7 = 7;
+  string var8 = 8;
+  string var9 = 9;
+  string var10 = 10;
+}
+
+// 接口的响应参数类型
+message HelloReply {
+  string rpy1 = 1;
+  string rpy2 = 2;
+  string rpy3 = 3;
+  string rpy4 = 4;
+  string rpy5 = 5;
+  string rpy6 = 6;
+  string rpy7 = 7;
+  string rpy8 = 8;
+  string rpy9 = 9;
+  string rpy10 = 10;
+}
